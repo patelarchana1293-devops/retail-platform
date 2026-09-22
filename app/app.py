@@ -38,6 +38,16 @@ def payment():
         "version": VERSION
     }), 200
 
+@app.route("/products")
+def products():
+    return jsonify({
+        "products": [
+            "Laptop",
+            "Mobile",
+            "Headphones"
+        ],
+        "version": VERSION
+    }), 200
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8081)
