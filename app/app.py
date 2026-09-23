@@ -38,6 +38,17 @@ def payment():
         "version": VERSION
     }), 200
 
+@app.route("/orders")
+def orders():
+    return jsonify({
+        "orders": [
+            "ORD-1001",
+            "ORD-1002",
+            "ORD-1003"
+        ],
+        "version": VERSION
+    }), 200
+
 @app.route("/products")
 def products():
     return jsonify({
