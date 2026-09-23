@@ -35,6 +35,7 @@ def payment():
     return jsonify({
         "status": "success",
         "message": "Payment processed successfully",
+        "payment_reference": "PAY-4.2.1",
         "version": VERSION
     }), 200
 
